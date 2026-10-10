@@ -52,6 +52,7 @@ const Navbar = ({ theme, setTheme }) => {
           Contact us
         </a>
         <a
+          onClick={() => setSidebarOpen(false)}
           href="#contact-us"
           className="max-sm:flex hidden items-center gap-2 bg-primary text-white py-2 rounded-full cursor-pointer hover:scale-103 transition-all"
         >
