@@ -9,11 +9,11 @@ function CustomersBox({ rating, title, checked, paragraph }) {
       <div className="space-y-2">
         <div className="flex gap-1 items-center">
           <p className="font-semibold text-lg">{title}</p>
-          <span
-            className={`text-green-600 text-xl ${checked ? "block" : "hidden"}`}
-          >
-            <i class="ri-checkbox-circle-fill"></i>
-          </span>
+          {checked && (
+            <span className="text-green-600 text-xl">
+              <i className="ri-checkbox-circle-fill"></i>
+            </span>
+          )}
         </div>
         <div className="w-80">
           <p className="text-sm text-gray-500/80">{paragraph}</p>

@@ -9,25 +9,25 @@ function Navbar() {
       <div className="py-8 md:px-0 px-3 flex items-center gap-15 justify-between ">
         <div className="flex items-center gap-3">
           <button
-            onClick={() => {
-              setSidebarOpen(true);
-            }}
+            onClick={() => setSidebarOpen(true)}
+            aria-label="Open menu"
             className="cursor-pointer block md:hidden"
           >
-            <i class="ri-menu-line text-2xl"></i>
+            <i className="ri-menu-line text-2xl"></i>
           </button>
           <a href="#">
-            <img src={logo} className="w-30 md:w-40" alt="" />
+            <img src={logo} className="w-30 md:w-40" alt="Shop.co" />
           </a>
         </div>
         <div
-          className={`z-999 relative sm:text-sm md:text-md ${!sidebarOpen ? "max-md:w-0 overflow-hidden" : "max-md:w-60 max-md:pl-5"} max-md:fixed top-0 bottom-0 left-0 max-md:min-h-screen max-md:h-full max-md:flex-col max-md:bg-black max-md:text-white max-md:pt-20 flex gap-5 transition-all`}
+          className={`z-999 relative sm:text-sm ${!sidebarOpen ? "max-md:w-0 overflow-hidden" : "max-md:w-60 max-md:pl-5"} max-md:fixed top-0 bottom-0 left-0 max-md:min-h-screen max-md:h-full max-md:flex-col max-md:bg-black max-md:text-white max-md:pt-20 flex gap-5 transition-all`}
         >
           <button
             onClick={() => setSidebarOpen(false)}
+            aria-label="Close menu"
             className="text-white text-lg font-semibold absolute right-5 top-4 cursor-pointer block "
           >
-            <i class="ri-close-large-line"></i>
+            <i className="ri-close-large-line"></i>
           </button>
           <ul className="flex items-center gap-5 max-md:flex-col max-md:items-start">
             <li className="relative">

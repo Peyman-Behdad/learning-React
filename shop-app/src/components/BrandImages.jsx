@@ -1,8 +1,7 @@
-
-function BrandImages({address}) {
+function BrandImages({ src, alt }) {
   return (
     <div>
-      <img className="" src={address} alt="" />
+      <img src={src} alt={alt} />
     </div>
   );
 }
