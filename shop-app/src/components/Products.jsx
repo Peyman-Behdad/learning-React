@@ -4,7 +4,7 @@ function Products({ title, products }) {
   return (
     <div className="container mx-auto">
       <div className="flex flex-col  gap-y-15 pt-20">
-        <p className="text-center text-5xl font-extrabold">{title}</p>
+        <h2 className="text-center text-5xl font-extrabold">{title}</h2>
         <div className="flex items-center justify-between">
           {products.map((product) => (
             <ProductBox key={product.id} {...product} />

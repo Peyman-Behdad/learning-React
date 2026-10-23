@@ -16,8 +16,8 @@ function App() {
       <Navbar />
       <Hero />
       <Brands />
-      <Products title={"NEW ARRIVALS"} products={newArrivalsProducts} />
-      <Products title={"TOP SELLING"} products={topSellingProducts} />
+      <Products title="NEW ARRIVALS" products={newArrivalsProducts} />
+      <Products title="TOP SELLING" products={topSellingProducts} />
       <Customers customers={customersBox} />
     </>
   );

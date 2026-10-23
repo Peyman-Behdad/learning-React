@@ -1,16 +1,10 @@
 function StarRating({ rating }) {
   const stars = [1, 2, 3, 4, 5];
+
   return (
     <div>
       {stars.map((star) => {
-        if (star === Math.floor(rating) + 1 && rating % 1 !== 0) {
-          return (
-            <i
-              key={star}
-              className="ri-star-half-fill text-amber-300 text-lg"
-            ></i>
-          );
-        }
+        // ستارهٔ کامل: شمارهٔ ستاره از امتیاز بیشتر نیست (مثلاً ستارهٔ 3 برای امتیاز 3.5)
         if (star <= rating) {
           return (
             <i
@@ -19,6 +13,17 @@ function StarRating({ rating }) {
             ></i>
           );
         }
+        // نیم‌ستاره: امتیاز از ستارهٔ قبلی بیشتر است ولی به این ستاره نرسیده (مثلاً ستارهٔ 4 برای امتیاز 3.5)
+        if (star - 1 < rating) {
+          return (
+            <i
+              key={star}
+              className="ri-star-half-fill text-amber-300 text-lg"
+            ></i>
+          );
+        }
+        // بقیهٔ ستاره‌ها نمایش داده نمی‌شوند (مثل قبل)
+        return null;
       })}
     </div>
   );
