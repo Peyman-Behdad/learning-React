@@ -18,9 +18,9 @@ const statusItems = [
 
 function Hero() {
   return (
-    <div className="bg-[#F2F0F1]">
-      <div className="container mx-auto">
-        <div className="flex-col md:pt-20 pt-10 pb-0 xl:pb-20 justify-between gap-10 xl:gap-0 xl:flex-row flex relative px-4">
+    <section className="bg-[#F2F0F1]">
+      <div className="container">
+        <div className="flex-col md:pt-20 pt-10 pb-0 xl:pb-20 justify-between gap-10 xl:gap-0 xl:flex-row flex relative">
           <div className="space-y-10 md:pt-10">
             <div className="space-y-8">
               <h1 className="md:text-7xl text-5xl max-sm:text-4xl font-extrabold md:w-130">
@@ -48,12 +48,16 @@ function Hero() {
               ))}
             </div>
           </div>
-          <div className="flex items-center justify-center lg:absolute sticky lg:bottom-0 lg:right-0 ">
-            <img src={HeroImage} className="md:w-150 w-130" alt="" />
+          <div className="flex items-center justify-center lg:absolute lg:bottom-0 lg:right-0">
+            <img
+              src={HeroImage}
+              className="w-full max-w-130 md:w-150 md:max-w-none"
+              alt=""
+            />
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
