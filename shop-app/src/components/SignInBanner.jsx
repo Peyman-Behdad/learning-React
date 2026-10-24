@@ -1,9 +1,9 @@
 import { useState } from "react";
 
 function SignInBanner() {
-  const [close, setClose] = useState(false);
+  const [isClosed, setIsClosed] = useState(false);
 
-  if (close) return null;
+  if (isClosed) return null;
 
   return (
     <div className="bg-black w-full py-4 relative">
@@ -15,11 +15,12 @@ function SignInBanner() {
           </a>
         </p>
         <button
-          onClick={() => setClose(true)}
+          type="button"
+          onClick={() => setIsClosed(true)}
           aria-label="Close banner"
           className="text-white text-lg font-semibold absolute right-29 cursor-pointer hidden md:block "
         >
-          <i className="ri-close-large-line"></i>
+          <i className="ri-close-large-line" aria-hidden="true"></i>
         </button>
       </div>
     </div>
