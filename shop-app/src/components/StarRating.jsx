@@ -1,29 +1,29 @@
-function StarRating({ rating }) {
-  const stars = [1, 2, 3, 4, 5];
+const STARS = [1, 2, 3, 4, 5];
 
+// Returns the icon class for one star, or null when the star should not be shown.
+function getStarIcon(star, rating) {
+  // Full star: the star's number is not greater than the rating (star 3 for rating 3.5)
+  if (star <= rating) return "ri-star-fill";
+  // Half star: the rating passed the previous star but not this one (star 4 for rating 3.5)
+  if (star - 1 < rating) return "ri-star-half-fill";
+  // Empty stars are not displayed.
+  return null;
+}
+
+function StarRating({ rating }) {
   return (
-    <div>
-      {stars.map((star) => {
-        // ستارهٔ کامل: شمارهٔ ستاره از امتیاز بیشتر نیست (مثلاً ستارهٔ 3 برای امتیاز 3.5)
-        if (star <= rating) {
-          return (
-            <i
-              key={star}
-              className="ri-star-fill text-amber-300 text-lg mr-1"
-            ></i>
-          );
-        }
-        // نیم‌ستاره: امتیاز از ستارهٔ قبلی بیشتر است ولی به این ستاره نرسیده (مثلاً ستارهٔ 4 برای امتیاز 3.5)
-        if (star - 1 < rating) {
-          return (
-            <i
-              key={star}
-              className="ri-star-half-fill text-amber-300 text-lg"
-            ></i>
-          );
-        }
-        // بقیهٔ ستاره‌ها نمایش داده نمی‌شوند (مثل قبل)
-        return null;
+    // The icons are decorative, so the label gives screen readers the real meaning.
+    <div role="img" aria-label={`Rated ${rating} out of 5`} className="flex gap-1">
+      {STARS.map((star) => {
+        const icon = getStarIcon(star, rating);
+        if (!icon) return null;
+        return (
+          <i
+            key={star}
+            aria-hidden="true"
+            className={`${icon} text-amber-300 text-lg`}
+          ></i>
+        );
       })}
     </div>
   );
