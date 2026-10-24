@@ -1,6 +1,21 @@
 import HeroImage from "../assets/images/hero/Subject.png";
 import StatusBox from "./StatusBox";
 
+const statusItems = [
+  {
+    number: "200+",
+    title: "International Brands",
+  },
+  {
+    number: "2,000+",
+    title: "High-Quality Products",
+  },
+  {
+    number: "30,000+",
+    title: "Happy Customers",
+  },
+];
+
 function Hero() {
   return (
     <div className="bg-[#F2F0F1]">
@@ -24,13 +39,17 @@ function Hero() {
               </a>
             </div>
             <div className="flex items-center max-sm:justify-center gap-y-5 lg:gap-x-18 gap-x-10 lg:gap-5 flex-wrap">
-              <StatusBox number="200+" title="International Brands" />
-              <StatusBox number="2,000+" title="High-Quality Products" />
-              <StatusBox number="30,000" title="Happy Customers" />
+              {statusItems.map((item) => (
+                <StatusBox
+                  key={item.title}
+                  number={item.number}
+                  title={item.title}
+                />
+              ))}
             </div>
           </div>
           <div className="flex items-center justify-center lg:absolute sticky lg:bottom-0 lg:right-0 ">
-            <img src={HeroImage} className="Heroimage md:w-150! w-130" alt="" />
+            <img src={HeroImage} className="md:w-150 w-130" alt="" />
           </div>
         </div>
       </div>

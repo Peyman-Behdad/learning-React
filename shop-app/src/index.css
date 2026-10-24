@@ -1,8 +1,1 @@
 @import "tailwindcss";
-
-
-@media (min-width: 1025px) {
-  .Heroimage {
-    width: 450px;
-  }
-}
