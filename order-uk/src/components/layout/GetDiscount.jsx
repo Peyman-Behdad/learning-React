@@ -13,7 +13,7 @@ function GetDiscount({
   onOpen,
 }) {
   return (
-    <div className="mx-auto container">
+    <div className="mx-auto container hidden xl:block">
       <div className="flex justify-between items-center text-sm overflow-hidden bg-[#FAFAFA] border-b border-l border-r border-gray-300 rounded-bl-2xl rounded-br-2xl pl-7">
         <div className="flex items-center gap-x-4">
           <CircleStar size={27} color="gold" />
