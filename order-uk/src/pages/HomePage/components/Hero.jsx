@@ -4,7 +4,7 @@ import HeroPersonBg from "../../../assets/images/hero/hero-person-bg.svg";
 import HeroPerson from "../../../assets/images/hero/hero-person.svg";
 import FirstMessageBox from "../../../assets/images/hero/first-box.svg";
 import SecondMessageBox from "../../../assets/images/hero/second-box.svg";
-import ThirsMessageBox from "../../../assets/images/hero/third-box.svg";
+import ThirdMessageBox from "../../../assets/images/hero/third-box.svg";
 import MessagesBox from "./MessagesBox";
 
 const inputData = [
@@ -12,6 +12,24 @@ const inputData = [
     text: "search",
     placeholder: "e.g EC4R 3TE",
     btnClassName: "bg-orange-400 md:px-15 py-3.5 text-white",
+  },
+];
+
+const MessagesBoxData = [
+  {
+    id: 1,
+    src: FirstMessageBox,
+    className: "xl:top-10 xl:right-20 right-16 top-12",
+  },
+  {
+    id: 2,
+    src: SecondMessageBox,
+    className: "xl:top-50 xl:right-0 right-0 top-40",
+  },
+  {
+    id: 3,
+    src: ThirdMessageBox,
+    className: "xl:top-90 xl:right-12 right-8 top-70",
   },
 ];
 
@@ -53,18 +71,13 @@ function Hero() {
           src={HeroPersonBg}
           alt=""
         />
-        <MessagesBox
-          src={FirstMessageBox}
-          className={" xl:top-10 xl:right-20 right-16 top-12"}
-        />
-        <MessagesBox
-          src={SecondMessageBox}
-          className={"xl:top-50 xl:right-0 right-0 top-40 "}
-        />
-        <MessagesBox
-          src={ThirsMessageBox}
-          className={"xl:top-90 xl:right-12 right-8 top-70"}
-        />
+        {MessagesBoxData.map((item) => (
+          <MessagesBox
+            key={item.id}
+            src={item.src}
+            className={item.className}
+          />
+        ))}
       </div>
     </div>
   );
