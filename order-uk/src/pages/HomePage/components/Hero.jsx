@@ -2,6 +2,10 @@ import Input from "../../../components/ui/Input";
 import HeroSide from "../../../assets/images/hero/hero-side.svg";
 import HeroPersonBg from "../../../assets/images/hero/hero-person-bg.svg";
 import HeroPerson from "../../../assets/images/hero/hero-person.svg";
+import FirstMessageBox from "../../../assets/images/hero/first-box.svg";
+import SecondMessageBox from "../../../assets/images/hero/second-box.svg";
+import ThirsMessageBox from "../../../assets/images/hero/third-box.svg";
+import MessagesBox from "./MessagesBox";
 
 const inputData = [
   {
@@ -48,6 +52,18 @@ function Hero() {
           className="hidden lg:block absolute bottom-0 left-1/2 -translate-x-1/2 z-10 w-110 xl:w-170"
           src={HeroPersonBg}
           alt=""
+        />
+        <MessagesBox
+          src={FirstMessageBox}
+          className={" xl:top-10 xl:right-20 right-16 top-12"}
+        />
+        <MessagesBox
+          src={SecondMessageBox}
+          className={"xl:top-50 xl:right-0 right-0 top-40 "}
+        />
+        <MessagesBox
+          src={ThirsMessageBox}
+          className={"xl:top-90 xl:right-12 right-8 top-70"}
         />
       </div>
     </div>
