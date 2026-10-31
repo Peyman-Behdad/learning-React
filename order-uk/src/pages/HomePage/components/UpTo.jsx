@@ -3,6 +3,7 @@ import FirstBox from "../../../assets/images/upto/first.svg";
 import SecondBox from "../../../assets/images/upto/second.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import DropDown from "../../../components/ui/DropDown";
 
 const DisCountItems = [
   {
@@ -39,6 +40,8 @@ const DisCountItems = [
   },
 ];
 
+const dropdownItems = ["Vegan", "Sushi", "Pizza & Fast food", "Others"];
+
 function UpTo() {
   return (
     <div className="container mx-auto lg:my-10 my-5 px-2 md:px-0">
@@ -52,8 +55,8 @@ function UpTo() {
             <span className="inline-block lg:hidden">Discount offers</span>
           </p>
         </div>
-        <div>
-          <ul className="flex items-center gap-5 lg:gap-10">
+        <div className="">
+          <ul className="hidden lg:flex items-center gap-5 lg:gap-10">
             <li className="hidden lg:inline-block cursor-pointer">
               <a href="#">Vegan</a>
             </li>
@@ -67,6 +70,18 @@ function UpTo() {
               <a href="#">others</a>
             </li>
           </ul>
+          <div className="block lg:hidden">
+            <DropDown
+              options={dropdownItems}
+              mainClassName={
+                "text-orange-400 border border-orange-400 rounded-full md:px-10 md:py-4 px-5 py-2 cursor-pointer"
+              }
+              boxClassName={
+                "bg-orange-400/95 px-2 py-2 top-15 right-0 rounded-xl text-white"
+              }
+              itemsClassName={"hover:bg-orange-300 duration-150 rounded-full"}
+            />
+          </div>
         </div>
       </div>
       <Swiper slidesPerView={"auto"} spaceBetween={14} className="mySwiper">
