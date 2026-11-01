@@ -9,7 +9,7 @@ function PopularBox({
 }) {
   return (
     <div
-      className={`${boxClassName} w-50 cursor-pointer group hover:shadow-xl shadow-gray-200 duration-150 overflow-hidden`}
+      className={`${boxClassName} cursor-pointer group hover:shadow-xl shadow-gray-200 duration-150 overflow-hidden`}
     >
       <div>
         <img

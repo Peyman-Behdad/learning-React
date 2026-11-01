@@ -17,7 +17,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="mx-auto container my-8">
+    <nav className="mx-auto container my-8 px-2 md:px-0">
       <div className="flex items-center justify-between">
         <div>
           <img className="w-40" src={logo} alt="" />

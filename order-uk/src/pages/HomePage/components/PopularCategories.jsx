@@ -1,10 +1,16 @@
 import First from "../../../assets/images/popularCategories/first.svg";
-import PopularBox from "../../../components/layout/PopularBox";
+import Second from "../../../assets/images/popularCategories/second.svg";
+import Third from "../../../assets/images/popularCategories/third.svg";
+import Fourth from "../../../assets/images/popularCategories/fourth.svg";
+import Fifth from "../../../assets/images/popularCategories/fifth.svg";
+import Sixth from "../../../assets/images/popularCategories/sixth.svg";
+
+import BoxCategories from "../../../components/layout/BoxCategories";
 
 const categoriesItems = [
   {
     id: 1,
-    boxClssName: "bg-gray-100 rounded-xl border border-gray-200",
+    boxClssName: "bg-gray-100 rounded-xl border border-gray-200 w-50",
     image: First,
     imageClassName: "",
     title: "Burgers & Fast food",
@@ -14,77 +20,64 @@ const categoriesItems = [
   },
   {
     id: 2,
-    boxClssName: "bg-gray-100 rounded-xl border border-gray-200",
-    image: First,
+    boxClssName: "bg-gray-100 rounded-xl border border-gray-200 w-50",
+    image: Second,
     imageClassName: "",
-    title: "Burgers & Fast food",
+    title: "Salads",
     titleClassName: "font-bold",
-    decription: "21 Restaurants",
+    decription: "32 Restaurants",
     decriptionClassName: "text-sm text-orange-400",
   },
   {
     id: 3,
-    boxClssName: "bg-gray-100 rounded-xl border border-gray-200",
-    image: First,
+    boxClssName: "bg-gray-100 rounded-xl border border-gray-200 w-50",
+    image: Third,
     imageClassName: "",
-    title: "Burgers & Fast food",
+    title: "Pasta & Casuals",
     titleClassName: "font-bold",
-    decription: "21 Restaurants",
+    decription: "4 Restaurants",
     decriptionClassName: "text-sm text-orange-400",
   },
   {
     id: 4,
-    boxClssName: "bg-gray-100 rounded-xl border border-gray-200",
-    image: First,
+    boxClssName: "bg-gray-100 rounded-xl border border-gray-200 w-50",
+    image: Fourth,
     imageClassName: "",
-    title: "Burgers & Fast food",
+    title: "Pizza",
     titleClassName: "font-bold",
-    decription: "21 Restaurants",
+    decription: "32 Restaurants",
     decriptionClassName: "text-sm text-orange-400",
   },
   {
     id: 5,
-    boxClssName: "bg-gray-100 rounded-xl border border-gray-200",
-    image: First,
+    boxClssName: "bg-gray-100 rounded-xl border border-gray-200 w-50",
+    image: Fifth,
     imageClassName: "",
-    title: "Burgers & Fast food",
+    title: "Breakfast",
     titleClassName: "font-bold",
-    decription: "21 Restaurants",
+    decription: "4 Restaurants",
     decriptionClassName: "text-sm text-orange-400",
   },
   {
     id: 6,
-    boxClssName: "bg-gray-100 rounded-xl border border-gray-200",
-    image: First,
+    boxClssName: "bg-gray-100 rounded-xl border border-gray-200 w-50",
+    image: Sixth,
     imageClassName: "",
-    title: "Burgers & Fast food",
+    title: "Soups",
     titleClassName: "font-bold",
-    decription: "21 Restaurants",
+    decription: "32 Restaurants",
     decriptionClassName: "text-sm text-orange-400",
   },
 ];
 
 function PopularCategories() {
   return (
-    <div className="container mx-auto overflow-hidden px-2 md:px-0">
-      <div>
-        <p className="lg:text-3xl md:text-2xl text-xl font-bold">
-          Popular Categories
-        </p>
-      </div>
-      <div className="my-10 flex items-center gap-y-3 justify-between flex-wrap">
-        {categoriesItems.map((item) => (
-          <PopularBox
-            boxClassName={item.boxClssName}
-            image={item.image}
-            imageClassName={item.imageClassName}
-            title={item.title}
-            titleClassName={item.titleClassName}
-            description={item.decription}
-            descriptionClassName={item.decriptionClassName}
-          />
-        ))}
-      </div>
+    <div>
+      <BoxCategories
+        categoriesItems={categoriesItems}
+        title={"Popular Categories"}
+        box={true}
+      />
     </div>
   );
 }
