@@ -49,9 +49,7 @@ function UpTo() {
         <div>
           <p className="lg:text-3xl md:text-2xl text-xl font-bold">
             Up to -40%{" "}
-            <span className="hidden lg:inline-block">
-              order.uk exclusive deals
-            </span>
+            <span className="hidden lg:inline-block">Exclusive Deals</span>
             <span className="inline-block lg:hidden">Discount offers</span>
           </p>
         </div>
