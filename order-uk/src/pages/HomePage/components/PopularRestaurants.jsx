@@ -10,7 +10,8 @@ import BoxCategories from "../../../components/layout/BoxCategories";
 const restaurantsItems = [
   {
     id: 1,
-    boxClssName: "bg-orange-400 text-white text-center rounded-xl md:w-50 w-40",
+    boxClssName:
+      "bg-orange-400 text-white text-center rounded-xl md:w-50 w-40 h-54 md:h-58 ",
     image: First,
     imageClassName: "",
     title: "Burgers & Fast food",
@@ -18,7 +19,8 @@ const restaurantsItems = [
   },
   {
     id: 2,
-    boxClssName: "bg-orange-400 text-white text-center rounded-xl md:w-50 w-40",
+    boxClssName:
+      "bg-orange-400 text-white text-center rounded-xl md:w-50 w-40 h-54 md:h-58 ",
     image: Second,
     imageClassName: "",
     title: "Salads",
@@ -26,7 +28,8 @@ const restaurantsItems = [
   },
   {
     id: 3,
-    boxClssName: "bg-orange-400 text-white text-center rounded-xl md:w-50 w-40",
+    boxClssName:
+      "bg-orange-400 text-white text-center rounded-xl md:w-50 w-40 h-54 md:h-58 ",
     image: Third,
     imageClassName: "",
     title: "Pasta & Casuals",
@@ -34,7 +37,8 @@ const restaurantsItems = [
   },
   {
     id: 4,
-    boxClssName: "bg-orange-400 text-white text-center rounded-xl md:w-50 w-40",
+    boxClssName:
+      "bg-orange-400 text-white text-center rounded-xl md:w-50 w-40 h-54 md:h-58 ",
     image: Fourth,
     imageClassName: "",
     title: "Pizza",
@@ -42,7 +46,8 @@ const restaurantsItems = [
   },
   {
     id: 5,
-    boxClssName: "bg-orange-400 text-white text-center rounded-xl md:w-50 w-40",
+    boxClssName:
+      "bg-orange-400 text-white text-center rounded-xl md:w-50 w-40 h-54 md:h-58 ",
     image: Fifth,
     imageClassName: "",
     title: "Breakfast",
@@ -50,7 +55,8 @@ const restaurantsItems = [
   },
   {
     id: 6,
-    boxClssName: "bg-orange-400 text-white text-center rounded-xl md:w-50 w-40",
+    boxClssName:
+      "bg-orange-400 text-white text-center rounded-xl md:w-50 w-40 h-54 md:h-58 ",
     image: Sixth,
     imageClassName: "",
     title: "Soups",
