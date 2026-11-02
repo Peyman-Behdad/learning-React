@@ -10,7 +10,7 @@ import BoxCategories from "../../../components/layout/BoxCategories";
 const restaurantsItems = [
   {
     id: 1,
-    boxClssName:
+    boxClassName:
       "bg-orange-400 text-white text-center rounded-xl md:w-50 w-40 h-54 md:h-58 ",
     image: First,
     imageClassName: "",
@@ -19,7 +19,7 @@ const restaurantsItems = [
   },
   {
     id: 2,
-    boxClssName:
+    boxClassName:
       "bg-orange-400 text-white text-center rounded-xl md:w-50 w-40 h-54 md:h-58 ",
     image: Second,
     imageClassName: "",
@@ -28,7 +28,7 @@ const restaurantsItems = [
   },
   {
     id: 3,
-    boxClssName:
+    boxClassName:
       "bg-orange-400 text-white text-center rounded-xl md:w-50 w-40 h-54 md:h-58 ",
     image: Third,
     imageClassName: "",
@@ -37,7 +37,7 @@ const restaurantsItems = [
   },
   {
     id: 4,
-    boxClssName:
+    boxClassName:
       "bg-orange-400 text-white text-center rounded-xl md:w-50 w-40 h-54 md:h-58 ",
     image: Fourth,
     imageClassName: "",
@@ -46,7 +46,7 @@ const restaurantsItems = [
   },
   {
     id: 5,
-    boxClssName:
+    boxClassName:
       "bg-orange-400 text-white text-center rounded-xl md:w-50 w-40 h-54 md:h-58 ",
     image: Fifth,
     imageClassName: "",
@@ -55,7 +55,7 @@ const restaurantsItems = [
   },
   {
     id: 6,
-    boxClssName:
+    boxClassName:
       "bg-orange-400 text-white text-center rounded-xl md:w-50 w-40 h-54 md:h-58 ",
     image: Sixth,
     imageClassName: "",
@@ -70,7 +70,7 @@ function PopularRestaurants() {
       <BoxCategories
         categoriesItems={restaurantsItems}
         title={"Popular Restaurants"}
-        swiper={true}
+        variant="swiper"
       />
     </div>
   );

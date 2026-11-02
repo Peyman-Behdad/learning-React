@@ -10,63 +10,63 @@ import BoxCategories from "../../../components/layout/BoxCategories";
 const categoriesItems = [
   {
     id: 1,
-    boxClssName: "bg-gray-100 rounded-xl border border-gray-200 w-50",
+    boxClassName: "bg-gray-100 rounded-xl border border-gray-200 w-50",
     image: First,
     imageClassName: "",
     title: "Burgers & Fast food",
     titleClassName: "font-bold",
-    decription: "21 Restaurants",
-    decriptionClassName: "text-sm text-orange-400",
+    description: "21 Restaurants",
+    descriptionClassName: "text-xs text-orange-400",
   },
   {
     id: 2,
-    boxClssName: "bg-gray-100 rounded-xl border border-gray-200 w-50",
+    boxClassName: "bg-gray-100 rounded-xl border border-gray-200 w-50",
     image: Second,
     imageClassName: "",
     title: "Salads",
     titleClassName: "font-bold",
-    decription: "32 Restaurants",
-    decriptionClassName: "text-sm text-orange-400",
+    description: "32 Restaurants",
+    descriptionClassName: "text-xs text-orange-400",
   },
   {
     id: 3,
-    boxClssName: "bg-gray-100 rounded-xl border border-gray-200 w-50",
+    boxClassName: "bg-gray-100 rounded-xl border border-gray-200 w-50",
     image: Third,
     imageClassName: "",
     title: "Pasta & Casuals",
     titleClassName: "font-bold",
-    decription: "4 Restaurants",
-    decriptionClassName: "text-sm text-orange-400",
+    description: "4 Restaurants",
+    descriptionClassName: "text-xs text-orange-400",
   },
   {
     id: 4,
-    boxClssName: "bg-gray-100 rounded-xl border border-gray-200 w-50",
+    boxClassName: "bg-gray-100 rounded-xl border border-gray-200 w-50",
     image: Fourth,
     imageClassName: "",
     title: "Pizza",
     titleClassName: "font-bold",
-    decription: "32 Restaurants",
-    decriptionClassName: "text-sm text-orange-400",
+    description: "32 Restaurants",
+    descriptionClassName: "text-xs text-orange-400",
   },
   {
     id: 5,
-    boxClssName: "bg-gray-100 rounded-xl border border-gray-200 w-50",
+    boxClassName: "bg-gray-100 rounded-xl border border-gray-200 w-50",
     image: Fifth,
     imageClassName: "",
     title: "Breakfast",
     titleClassName: "font-bold",
-    decription: "4 Restaurants",
-    decriptionClassName: "text-sm text-orange-400",
+    description: "4 Restaurants",
+    descriptionClassName: "text-xs text-orange-400",
   },
   {
     id: 6,
-    boxClssName: "bg-gray-100 rounded-xl border border-gray-200 w-50",
+    boxClassName: "bg-gray-100 rounded-xl border border-gray-200 w-50",
     image: Sixth,
     imageClassName: "",
     title: "Soups",
     titleClassName: "font-bold",
-    decription: "32 Restaurants",
-    decriptionClassName: "text-sm text-orange-400",
+    description: "32 Restaurants",
+    descriptionClassName: "text-xs text-orange-400",
   },
 ];
 
@@ -76,7 +76,7 @@ function PopularCategories() {
       <BoxCategories
         categoriesItems={categoriesItems}
         title={"Popular Categories"}
-        box={true}
+        variant="box"
       />
     </div>
   );
