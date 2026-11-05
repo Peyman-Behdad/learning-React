@@ -8,7 +8,7 @@ import DropDown from "../../../components/ui/DropDown";
 const DisCountItems = [
   {
     id: 1,
-    mainBoxClassName: " md:w-100 md:h-67 w-45 h-45",
+    mainBoxClassName: "cursor-pointer md:w-100 md:h-67 w-45 h-45",
     image: FirstBox,
     badgeText: "-40%",
     badgeTextClassName:
@@ -27,7 +27,7 @@ const DisCountItems = [
   },
   {
     id: 2,
-    mainBoxClassName: " md:w-100 md:h-67 w-45 h-45",
+    mainBoxClassName: "cursor-pointer md:w-100 md:h-67 w-45 h-45",
     image: SecondBox,
     badgeText: "-20%",
     badgeTextClassName:
@@ -46,7 +46,7 @@ const DisCountItems = [
   },
   {
     id: 3,
-    mainBoxClassName: " md:w-100 md:h-67 w-45 h-45",
+    mainBoxClassName: "cursor-pointer md:w-100 md:h-67 w-45 h-45",
     image: FirstBox,
     badgeText: "-20%",
     badgeTextClassName:
@@ -65,7 +65,7 @@ const DisCountItems = [
   },
   {
     id: 4,
-    mainBoxClassName: " md:w-100 md:h-67 w-45 h-45",
+    mainBoxClassName: "cursor-pointer md:w-100 md:h-67 w-45 h-45",
     image: SecondBox,
     badgeText: "-20%",
     badgeTextClassName:

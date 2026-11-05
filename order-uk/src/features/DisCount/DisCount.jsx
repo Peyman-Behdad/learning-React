@@ -24,7 +24,7 @@ function DisCount({
   return (
     <>
       <div
-        className={`${mainBoxClassName} bg-cover bg-center rounded-xl relative px-8 py-5 flex items-end overflow-hidden shadow cursor-pointer`}
+        className={`${mainBoxClassName} bg-cover bg-center rounded-xl relative px-8 py-5 flex items-end overflow-hidden shadow`}
         style={{ backgroundImage: `url(${image})` }}
       >
         <div className={`${parentBadgeClassName} absolute`}>
@@ -34,7 +34,9 @@ function DisCount({
           <p className={`${titleClassName} text-orange-400`}>{title}</p>
           <p className={`${descriptionClassName} text-white`}>{description}</p>
           {buttonText && (
-            <button className={`${buttonClassName}`}>{buttonText}</button>
+            <button className={`${buttonClassName} cursor-pointer`}>
+              {buttonText}
+            </button>
           )}
         </div>
         {addItemClassName && (
