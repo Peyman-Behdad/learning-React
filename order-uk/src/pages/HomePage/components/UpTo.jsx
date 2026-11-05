@@ -8,35 +8,79 @@ import DropDown from "../../../components/ui/DropDown";
 const DisCountItems = [
   {
     id: 1,
+    mainBoxClassName: " md:w-100 md:h-67 w-45 h-45",
     image: FirstBox,
+    badgeText: "-40%",
+    badgeTextClassName:
+      "bg-black text-white font-semibold px-3.5 py-4 text-sm rounded-b-xl",
+    parentBadgeClassName: "text-center top-3 right-6",
+    textParent: "hidden md:block",
     title: "Restaurant",
-    paragraph: "Chef Burgers London",
-    discount: "-40%",
-    addItem: false,
+    titleClassName: "text-sm",
+    description: "Chef Burgers London",
+    descriptionClassName: "text-2xl font-bold",
+    secondTextParent: "block md:hidden pt-3 px-2",
+    secondTitle: "Restaurant",
+    secondTitleClassName: "text-sm",
+    secondDescription: "Chef Burgers London",
+    secondDescriptionClassName: "font-bold",
   },
   {
     id: 2,
+    mainBoxClassName: " md:w-100 md:h-67 w-45 h-45",
     image: SecondBox,
+    badgeText: "-20%",
+    badgeTextClassName:
+      "bg-black text-white font-semibold px-3.5 py-4 text-sm rounded-b-xl",
+    parentBadgeClassName: "text-center top-3 right-6",
+    textParent: "hidden md:block",
     title: "Restaurant",
-    paragraph: "Grand Ai Cafe London",
-    discount: "-20%",
-    addItem: false,
+    titleClassName: "text-sm",
+    description: "Grand Ai Cafe London",
+    descriptionClassName: "text-2xl font-bold",
+    secondTextParent: "block md:hidden pt-3 px-2",
+    secondTitle: "Restaurant",
+    secondTitleClassName: "text-sm",
+    secondDescription: "Grand Ai Cafe London",
+    secondDescriptionClassName: "font-bold",
   },
   {
     id: 3,
+    mainBoxClassName: " md:w-100 md:h-67 w-45 h-45",
     image: FirstBox,
+    badgeText: "-20%",
+    badgeTextClassName:
+      "bg-black text-white font-semibold px-3.5 py-4 text-sm rounded-b-xl",
+    parentBadgeClassName: "text-center top-3 right-6",
+    textParent: "hidden md:block",
     title: "Restaurant",
-    paragraph: "Butterbrot Cafe London",
-    discount: "-20%",
-    addItem: false,
+    titleClassName: "text-sm",
+    description: "Butterbrot Cafe London",
+    descriptionClassName: "text-2xl font-bold",
+    secondTextParent: "block md:hidden pt-3 px-2",
+    secondTitle: "Restaurant",
+    secondTitleClassName: "text-sm",
+    secondDescription: "Butterbrot Cafe London",
+    secondDescriptionClassName: "font-bold",
   },
   {
     id: 4,
+    mainBoxClassName: " md:w-100 md:h-67 w-45 h-45",
     image: SecondBox,
+    badgeText: "-20%",
+    badgeTextClassName:
+      "bg-black text-white font-semibold px-3.5 py-4 text-sm rounded-b-xl",
+    parentBadgeClassName: "text-center top-3 right-6",
+    textParent: "hidden md:block",
     title: "Restaurant",
-    paragraph: "Grand Ai Cafe London",
-    discount: "-20%",
-    addItem: false,
+    titleClassName: "text-sm",
+    description: "Grand Ai Cafe London",
+    descriptionClassName: "text-2xl font-bold",
+    secondTextParent: "block md:hidden pt-3 px-2",
+    secondTitle: "Restaurant",
+    secondTitleClassName: "text-sm",
+    secondDescription: "Grand Ai Cafe London",
+    secondDescriptionClassName: "font-bold",
   },
 ];
 
@@ -74,7 +118,7 @@ function UpTo() {
               mainClassName={
                 "text-orange-400 border border-orange-400 rounded-full md:px-10 md:py-4 px-5 py-2 cursor-pointer"
               }
-              boxClassName={
+              mainBoxClassName={
                 "bg-orange-400/95 px-2 py-2 top-15 right-0 rounded-xl text-white"
               }
               itemsClassName={"hover:bg-orange-300 duration-150 rounded-full"}
@@ -86,11 +130,21 @@ function UpTo() {
         {DisCountItems.map((item) => (
           <SwiperSlide key={item.id} className="lg:w-100! md:w-110! w-50!">
             <DisCount
+              mainBoxClassName={item.mainBoxClassName}
               image={item.image}
+              badgeText={item.badgeText}
+              badgeTextClassName={item.badgeTextClassName}
+              parentBadgeClassName={item.parentBadgeClassName}
+              textParent={item.textParent}
               title={item.title}
-              paragraph={item.paragraph}
-              discount={item.discount}
-              addItem={item.addItem}
+              titleClassName={item.titleClassName}
+              description={item.description}
+              descriptionClassName={item.descriptionClassName}
+              secondTextParent={item.secondTextParent}
+              secondTitle={item.secondTitle}
+              secondTitleClassName={item.secondTitleClassName}
+              secondDescription={item.secondDescription}
+              secondDescriptionClassName={item.secondDescriptionClassName}
             />
           </SwiperSlide>
         ))}

@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import PopularCategories from "./components/PopularCategories";
 import PopularRestaurants from "./components/PopularRestaurants";
 import UpTo from "./components/UpTo";
+import WithUs from "./components/WithUs";
 
 function HomePage() {
   return (
@@ -15,7 +16,8 @@ function HomePage() {
       <UpTo />
       <PopularCategories />
       <PopularRestaurants />
-      <GetApp/>
+      <GetApp />
+      <WithUs />
     </div>
   );
 }

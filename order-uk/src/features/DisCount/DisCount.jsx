@@ -1,34 +1,59 @@
 import { CirclePlus } from "lucide-react";
 
-function DisCount({ image, title, paragraph, discount, addItem }) {
+function DisCount({
+  mainBoxClassName,
+  image,
+  badgeText,
+  badgeTextClassName,
+  parentBadgeClassName,
+  textParent,
+  title,
+  titleClassName,
+  description,
+  descriptionClassName,
+  buttonText,
+  buttonClassName,
+  secondTextParent,
+  secondTitle,
+  secondTitleClassName,
+  secondDescription,
+  secondDescriptionClassName,
+  parentAddItemClassName,
+  addItemClassName,
+}) {
   return (
-    <div>
+    <>
       <div
-        className={`bg-cover bg-center md:w-100 md:h-67 w-45 h-45 rounded-xl relative px-8 py-5 flex items-end overflow-hidden shadow cursor-pointer`}
+        className={`${mainBoxClassName} bg-cover bg-center rounded-xl relative px-8 py-5 flex items-end overflow-hidden shadow cursor-pointer`}
         style={{ backgroundImage: `url(${image})` }}
       >
-        <div className="absolute right-5 top-3">
-          <span className="text-sm font-semibold text-white bg-black py-4 px-3 rounded-b-lg">
-            {discount}
-          </span>
+        <div className={`${parentBadgeClassName} absolute`}>
+          <span className={`${badgeTextClassName}`}>{badgeText}</span>
         </div>
-        <div className="hidden md:block">
-          <p className="text-orange-400">{title}</p>
-          <p className="text-white font-bold text-2xl">{paragraph}</p>
+        <div className={`${textParent}`}>
+          <p className={`${titleClassName} text-orange-400`}>{title}</p>
+          <p className={`${descriptionClassName} text-white`}>{description}</p>
+          {buttonText && (
+            <button className={`${buttonClassName}`}>{buttonText}</button>
+          )}
         </div>
-        {addItem && (
-          <div className="absolute right-0 bottom-0 z-20 cursor-pointer">
-            <span className="bg-white px-4 py-3 rounded-tl-4xl block">
-              <CirclePlus size={35} />
-            </span>
+        {addItemClassName && (
+          <div className={`${parentAddItemClassName} absolute`}>
+            <CirclePlus className={`${addItemClassName}`} size={70} />
           </div>
         )}
       </div>
-      <div className="block md:hidden pt-3 px-2">
-        <p className="text-orange-400">{title}</p>
-        <p className="text-black font-bold text-lg">{paragraph}</p>
+      <div>
+        <div className={`${secondTextParent}`}>
+          <p className={`${secondTitleClassName} text-orange-400`}>
+            {secondTitle}
+          </p>
+          <p className={`${secondDescriptionClassName} text-black`}>
+            {secondDescription}
+          </p>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
