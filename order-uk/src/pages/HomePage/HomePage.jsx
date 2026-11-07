@@ -1,5 +1,6 @@
 import GetDiscount from "../../components/layout/GetDiscount";
 import Navbar from "../../components/layout/Navbar";
+import AboutUs from "./components/AboutUs";
 import GetApp from "./components/GetApp";
 import Hero from "./components/Hero";
 import PopularCategories from "./components/PopularCategories";
@@ -18,6 +19,7 @@ function HomePage() {
       <PopularRestaurants />
       <GetApp />
       <WithUs />
+      <AboutUs />
     </div>
   );
 }
