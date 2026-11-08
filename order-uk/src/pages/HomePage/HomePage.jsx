@@ -2,6 +2,7 @@ import Footer from "../../components/layout/Footer";
 import GetDiscount from "../../components/layout/GetDiscount";
 import Navbar from "../../components/layout/Navbar";
 import AboutUs from "./components/AboutUs";
+import Copyright from "./components/Copyright";
 import GetApp from "./components/GetApp";
 import Hero from "./components/Hero";
 import PopularCategories from "./components/PopularCategories";
@@ -24,6 +25,7 @@ function HomePage() {
       <AboutUs />
       <Status />
       <Footer />
+      <Copyright />
     </div>
   );
 }
