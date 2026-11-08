@@ -1,6 +1,6 @@
 import People from "../../../assets/images/getApp/people.svg";
-import AppStore from "../../../assets/images/getApp/appstore.svg";
-import PlayStore from "../../../assets/images/getApp/playstore.svg";
+import AppStore from "../../../assets/images/appstore.svg";
+import PlayStore from "../../../assets/images/playstore.svg";
 import Logo from "../../../assets/images/logo.svg";
 
 function GetApp() {

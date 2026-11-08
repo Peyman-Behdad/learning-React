@@ -1,3 +1,4 @@
+import Footer from "../../components/layout/Footer";
 import GetDiscount from "../../components/layout/GetDiscount";
 import Navbar from "../../components/layout/Navbar";
 import AboutUs from "./components/AboutUs";
@@ -21,7 +22,8 @@ function HomePage() {
       <GetApp />
       <WithUs />
       <AboutUs />
-      <Status/>
+      <Status />
+      <Footer />
     </div>
   );
 }
