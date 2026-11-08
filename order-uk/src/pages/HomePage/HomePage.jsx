@@ -5,6 +5,7 @@ import GetApp from "./components/GetApp";
 import Hero from "./components/Hero";
 import PopularCategories from "./components/PopularCategories";
 import PopularRestaurants from "./components/PopularRestaurants";
+import Status from "./components/Status";
 import UpTo from "./components/UpTo";
 import WithUs from "./components/WithUs";
 
@@ -20,6 +21,7 @@ function HomePage() {
       <GetApp />
       <WithUs />
       <AboutUs />
+      <Status/>
     </div>
   );
 }
